@@ -17,8 +17,9 @@ $22 in total, with the cost trade-offs written up.
 - Club names moved predicted league finish by 4–6 places, until the season was dropped
   from the prompt; then 1–2. Most of the effect was memory of the real table, and the
   counterfactual design caught it.
-- Open-weight models changed *factual* answers on 10–16% of questions when only the club
-  name changed (closed models: 0%), and one moved a big club up about six places.
+- Open-weight models moved predictions more on a club name alone (2–6 places vs ~1 for
+  closed models), and two of three changed *factual* answers on 10–16% of questions
+  (closed models: 0%).
 - Planted data errors are found at ceiling; the real difference between models is false
   alarms on clean data (3% vs 10% vs 22%).
 
