@@ -9,7 +9,7 @@ multi-turn AI accountant benchmark) and Data Ops at a B2B insurance startup.
 Change one thing in real football event data (StatsBomb open data) and measure whether the
 answer follows the evidence or the hint. Code-graded against known truth, no LLM judge,
 95% bootstrap intervals, repeat prompts for self-agreement. Closed and open-weight models,
-about $22 in total.
+$22 in total, with the cost trade-offs written up.
 
 - False position labels almost never win (1–2% follow rate). But one model *contradicted
   true labels* half the time: "didn't follow the wrong hint" is not "read the data". A
@@ -17,6 +17,8 @@ about $22 in total.
 - Club names moved predicted league finish by 4–6 places, until the season was dropped
   from the prompt; then 1–2. Most of the effect was memory of the real table, and the
   counterfactual design caught it.
+- Open-weight models changed *factual* answers on 10–16% of questions when only the club
+  name changed (closed models: 0%), and one moved a big club up about six places.
 - Planted data errors are found at ceiling; the real difference between models is false
   alarms on clean data (3% vs 10% vs 22%).
 
